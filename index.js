@@ -11,10 +11,15 @@ class Player {
   printShotting() {
     console.log(this.numShooting);
   }
+
+  getScore() {
+    return this.#score;
+  }
+  updateScore(newScore) {
+    this.#score = newScore;
+  }
 }
 
 const limYH = new Player("임", "요한");
-limYH.#score = 10000;
-limYH.printShotting();
-limYH.increseShooting();
-limYH.printShotting();
+limYH.updateScore(10000);
+console.log(limYH.getScore());
