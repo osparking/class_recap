@@ -1,14 +1,15 @@
 class Player {
-  constructor() {
-    console.log("생성자~");
+  constructor(last, first) {
+    this.last = last;
+    this.first = first;
   }
   doSth() {
-    console.log("승리의 함성!");
+    console.log(this.last + this.first + "브라보!");
   }
 }
 
-const sonHM = new Player();
+const sonHM = new Player("박", "지성");
 sonHM.doSth();
 
-const parkJS = new Player();
-sonHM.doSth();
+const parkJS = new Player("손", "흥민");
+parkJS.doSth();
