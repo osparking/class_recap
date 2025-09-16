@@ -6,3 +6,6 @@ class Player {
 
 const sonHM = new Player();
 sonHM.doSth();
+
+const parkJS = new Player();
+sonHM.doSth();
