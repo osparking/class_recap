@@ -1,5 +1,8 @@
-class Player {}
+class Player {
+  doSth() {
+    console.log("승리의 함성!");
+  }
+}
 
 const sonHM = new Player();
-
-console.log('선수: ', sonHM);
+sonHM.doSth();
