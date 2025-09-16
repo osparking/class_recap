@@ -1,4 +1,7 @@
 class Player {
+  constructor() {
+    console.log("생성자~");
+  }
   doSth() {
     console.log("승리의 함성!");
   }
