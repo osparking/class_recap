@@ -1,15 +1,20 @@
 class Player {
+  #score = 0;
+  numShooting = 0;
   constructor(last, first) {
     this.last = last;
     this.first = first;
   }
-  doSth() {
-    console.log(this.last + this.first + "브라보!");
+  increseShooting() {
+    this.numShooting++;
+  }
+  printShotting() {
+    console.log(this.numShooting);
   }
 }
 
-const sonHM = new Player("박", "지성");
-sonHM.doSth();
-
-const parkJS = new Player("손", "흥민");
-parkJS.doSth();
+const limYH = new Player("임", "요한");
+limYH.#score = 10000;
+limYH.printShotting();
+limYH.increseShooting();
+limYH.printShotting();
