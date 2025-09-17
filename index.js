@@ -3,6 +3,10 @@ class Player {
   numShooting = 0;
 
   static description = "게임 참여자";
+
+  static newPlayer () {
+    return new Player("김", "길동");
+  }
   
   constructor(last, first) {
     this.last = last;
@@ -54,3 +58,6 @@ const limYH = new Player("임", "요한");
 // console.log(limYH);
 console.log(Player.description);
 console.log(limYH.description);
+
+const newPlayer = Player.newPlayer();
+console.log(newPlayer);
