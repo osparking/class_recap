@@ -11,7 +11,11 @@ class Player {
   private methodA() {
     console.log("이것은 1급 비밀이다.");
   }
+
+  get fullName() {
+    return `${this.last}${this.first}`;
+  }
 }
 
-const singer = new Player("갑자기 보다", "턴넬", 0);
-singer.callMe();
+const singer = new Player("제갈", "공명", 0);
+console.log(singer.fullName);
