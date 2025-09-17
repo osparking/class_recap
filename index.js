@@ -53,7 +53,9 @@ class Player {
   }
 }
 
-class AdminPlayer extends Player {}
+class AdminPlayer extends Player {
+  area = "홍보"
+}
 
 const admin = new AdminPlayer();
 
