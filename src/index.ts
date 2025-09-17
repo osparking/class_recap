@@ -1,6 +1,7 @@
 class Player {
   last: string;
   first: string;
+  score: number = 0;
   constructor(last: string, first: string) {
     this.last = last;
     this.first = first;
