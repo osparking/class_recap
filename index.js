@@ -1,6 +1,9 @@
 class Player {
   #score = 0;
   numShooting = 0;
+
+  static description = "게임 참여자";
+  
   constructor(last, first) {
     this.last = last;
     this.first = first;
@@ -47,5 +50,7 @@ class Player {
 }
 
 const limYH = new Player("임", "요한");
-limYH.fullname = "김 길동";
-console.log(limYH);
+// limYH.fullname = "김 길동";
+// console.log(limYH);
+console.log(Player.description);
+console.log(limYH.description);
