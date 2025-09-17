@@ -49,17 +49,16 @@ interface Colorful {
 }
 
 class Vehicle implements Colorful {
-  constructor(public color: string){}
+  constructor(public color: string) {}
 }
 
 const k9 = new Vehicle("ivory");
 
-class ElectricFan implements Colorful {
-  constructor(public color: string, public brand: string){}
   describeStatus() {
-    console.log(`이것은 ${this.color} ${this.brand} 선풍기이다.`);
   }
 }
 
-const myFan = new ElectricFan("검정색", "한일");
-myFan.describeStatus();
+interface Operatable {
+  runStep: number;
+  setRunStep(newRunStep: number): void;
+}
