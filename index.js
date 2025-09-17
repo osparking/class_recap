@@ -10,6 +10,10 @@ class Player {
     return this.#score;
   }
 
+  set score(newScore) {
+    this.#score = newScore;
+  }
+
   get fullname() {
     // return this.last + " " + this.first;
     return `${this.last} ${this.first}`;
