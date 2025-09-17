@@ -11,6 +11,9 @@ class Player {
   }
 
   set score(newScore) {
+    if (newScore < 0) {
+      throw new Error("성적에 음수를 배정할 수 없습니다.");
+    }
     this.#score = newScore;
   }
 
@@ -39,5 +42,5 @@ class Player {
 }
 
 const limYH = new Player("임", "요한");
-limYH.score = 10000000;
+limYH.score = -10000000;
 console.log(limYH.score);
