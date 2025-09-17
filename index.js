@@ -62,7 +62,7 @@ class AdminPlayer extends Player {
   }
 }
 
-const admin = new AdminPlayer();
+const admin = new AdminPlayer("임", "요한", ['기획', '재정']);
 
 const limYH = new Player("임", "요한");
 // limYH.fullname = "김 길동";
