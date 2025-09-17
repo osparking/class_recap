@@ -9,7 +9,7 @@ class Player {
   get score() {
     return this.#score;
   }
-  
+
   get fullname() {
     // return this.last + " " + this.first;
     return `${this.last} ${this.first}`;
@@ -35,6 +35,5 @@ class Player {
 }
 
 const limYH = new Player("임", "요한");
+limYH.score = 10000000;
 console.log(limYH.score);
-// limYH.#topSecret();
-limYH.updateScore(10000);
