@@ -5,6 +5,12 @@ class Player {
     this.last = last;
     this.first = first;
   }
+
+  get fullname() {
+    // return this.last + " " + this.first;
+    return `${this.last} ${this.first}`;
+  }
+
   increseShooting() {
     this.numShooting++;
   }
@@ -25,6 +31,6 @@ class Player {
 }
 
 const limYH = new Player("임", "요한");
+console.log(limYH.fullname);
 // limYH.#topSecret();
 limYH.updateScore(10000);
-console.log(limYH.getScore());
