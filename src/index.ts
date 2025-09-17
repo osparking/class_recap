@@ -84,6 +84,13 @@ class ElectricFan implements Colorful, Operatable {
   }
 }
 
+const myFan = new ElectricFan("검정색", 1, "한일");
+myFan.describeStatus();
+myFan.value = 2;
+myFan.describeStatus();
+myFan.setRunStep(3);
+myFan.describeStatus();
+
 interface Operatable {
   runStep: number;
   setRunStep(newRunStep: number): void;
