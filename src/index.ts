@@ -43,3 +43,13 @@ console.log(singer.fullName);
 
 const superStar = new SuperPlayer("던", "워릭", 90);
 superStar.addScoreBy10();
+
+interface Colorful {
+  color: string;
+}
+
+class Vehicle implements Colorful {
+  constructor(public color: string){}
+}
+
+const k9 = new Vehicle("ivory");
