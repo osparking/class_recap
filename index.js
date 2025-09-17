@@ -55,6 +55,11 @@ class Player {
 
 class AdminPlayer extends Player {
   area = "홍보"
+
+  constructor(last, first, area) {
+    super(last, first);
+    this.area = area;
+  }
 }
 
 const admin = new AdminPlayer();
