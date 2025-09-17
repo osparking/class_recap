@@ -2,7 +2,7 @@ class Player {
   constructor(
     public readonly last: string,
     public readonly first: string,
-    private _score: number
+    protected _score: number
   ) {}
 
   public callMe() {
@@ -29,6 +29,17 @@ class Player {
   }
 }
 
+class SuperPlayer extends Player {
+  public skillSet: string[] = [];
+  addScoreBy10() {
+    this._score = this._score + 10;
+    console.log(`성적: ${this._score}`);
+  }
+}
+
 const singer = new Player("제갈", "공명", 0);
 console.log(singer.fullName);
-singer.score = -1;
+// singer.score = -1;
+
+const superStar = new SuperPlayer("던", "워릭", 90);
+superStar.addScoreBy10();
