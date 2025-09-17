@@ -54,7 +54,33 @@ class Vehicle implements Colorful {
 
 const k9 = new Vehicle("ivory");
 
+class ElectricFan implements Colorful, Operatable {
+  set value(newRunStep: number) {
+    this._runStep = newRunStep;
+  }
+
+  constructor(
+    public color: string,
+    private _runStep: number,
+    public brand: string
+  ) {}
+
+  get runStep() {
+    return this._runStep;
+  }
+  
+  set runStep(newRunStep: number) {
+    this._runStep = newRunStep;
+  }
+
+  setRunStep(newRunStep: number): void {
+    this._runStep = newRunStep;
+  }
+
   describeStatus() {
+    console.log(
+      `이 ${this.color} ${this.brand} 선풍기는 ${this._runStep} 단으로 구동되고 있다.`
+    );
   }
 }
 
