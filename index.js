@@ -17,9 +17,14 @@ class Player {
   }
   updateScore(newScore) {
     this.#score = newScore;
+    this.#topSecret();
+  }
+  #topSecret() {
+    console.log("쉿, 우리끼리 얘긴데...");
   }
 }
 
 const limYH = new Player("임", "요한");
+// limYH.#topSecret();
 limYH.updateScore(10000);
 console.log(limYH.getScore());
