@@ -1,6 +1,9 @@
 class Player {
-  private score = 0;
-  constructor(public readonly last: string, public readonly first: string) {}
+  constructor(
+    public readonly last: string,
+    public readonly first: string,
+    private score: number
+  ) {}
 
   public callMe() {
     this.methodA();
@@ -10,5 +13,5 @@ class Player {
   }
 }
 
-const singer = new Player("갑자기 보다", "턴넬");
+const singer = new Player("갑자기 보다", "턴넬", 0);
 singer.callMe();
