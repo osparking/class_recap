@@ -4,10 +4,10 @@ class Player {
 
   static description = "게임 참여자";
 
-  static newPlayer () {
+  static newPlayer() {
     return new Player("김", "길동");
   }
-  
+
   constructor(last, first) {
     this.last = last;
     this.first = first;
@@ -17,10 +17,10 @@ class Player {
     return this.#score;
   }
 
-  set fullname (newFullname) {
+  set fullname(newFullname) {
     const [last, first] = newFullname.split(" ");
     this.last = last;
-    this.first = first;    
+    this.first = first;
   }
 
   set score(newScore) {
@@ -52,6 +52,10 @@ class Player {
     console.log("쉿, 우리끼리 얘긴데...");
   }
 }
+
+class AdminPlayer extends Player {}
+
+const admin = new AdminPlayer();
 
 const limYH = new Player("임", "요한");
 // limYH.fullname = "김 길동";
