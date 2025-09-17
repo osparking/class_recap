@@ -1,2 +1,10 @@
-console.log("미국과 거리를 둬야...");
-console.log("의원님 여러분!");
+class Player {
+  last: string;
+  first: string;
+  constructor(last: string, first: string) {
+    this.last = last;
+    this.first = first;
+  }
+}
+
+const singer = new Player("갑자기 보다", "턴넬");
