@@ -10,6 +10,12 @@ class Player {
     return this.#score;
   }
 
+  set fullname (newFullname) {
+    const [last, first] = newFullname.split(" ");
+    this.last = last;
+    this.first = first;    
+  }
+
   set score(newScore) {
     if (newScore < 0) {
       throw new Error("성적에 음수를 배정할 수 없습니다.");
@@ -18,7 +24,6 @@ class Player {
   }
 
   get fullname() {
-    // return this.last + " " + this.first;
     return `${this.last} ${this.first}`;
   }
 
@@ -42,5 +47,5 @@ class Player {
 }
 
 const limYH = new Player("임", "요한");
-limYH.score = -10000000;
-console.log(limYH.score);
+limYH.fullname = "김 길동";
+console.log(limYH);
