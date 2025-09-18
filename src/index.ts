@@ -146,3 +146,5 @@ const username = document.querySelector<HTMLInputElement>("#username")!;
 console.log(username.value);
 username.value = "bumTiger";
 console.log(username.value);
+
+const submitBtn = document.querySelector<HTMLButtonElement>(".btn")!;
