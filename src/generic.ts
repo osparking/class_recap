@@ -43,7 +43,7 @@ function getRandomElement<T>(elements: T[]): T | undefined {
 console.log(getRandomElement([1, 33, 2, 4545, -47]));
 console.log(getRandomElement<number>([]));
 
-function merge(obj1, obj2) {
+function merge<T, U>(obj1: T, obj2: U) {
   return {
     ...obj1,
     ...obj2,
@@ -55,4 +55,4 @@ const combined1 = merge(
   { sport: ["배드민턴", "조깅", "헬쓰"] }
 );
 
-console.log(combined1);
+console.log(JSON.stringify(combined1));
