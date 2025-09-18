@@ -7,8 +7,15 @@ abstract class Employee {
 }
 
 class FullTimeEmp extends Employee {
+  constructor(
+    public last: string,
+    public first: string,
+    private salary: number
+  ) {
+    super(last, first);
+  }
   getPay(): number {
-    return 1234;
+    return this.salary;
   }
 }
 
