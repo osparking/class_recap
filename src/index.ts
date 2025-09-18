@@ -144,3 +144,4 @@ interface Operatable {
 }
 
 const username = document.querySelector("#username")!;
+console.log(username.value);
