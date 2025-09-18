@@ -15,7 +15,7 @@ function stringIdentity(id: string): string {
 // }
 
 // 헤법: generic function
-function identity<Type>(id: Type) : Type {
+function identity<T>(id: T) : T {
   return id;
 }
 
