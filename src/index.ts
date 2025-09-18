@@ -1,3 +1,9 @@
+const msgOrAges: (number | string)[] = [];
+
+const counts : Array<number> = [1, 2, 3];
+const messages : Array<string> = ["한 그루", "갑자기", "음악과 찻잔 사이"];
+
+
 abstract class Employee {
   constructor(public last: string, public first: string) {}
   greet(): void {
