@@ -7,3 +7,9 @@ function numberIdentity(id: number): number {
 function stringIdentity(id: string): string {
   return id;
 }
+
+// 방법 2: any 형 사용
+
+function identity(id: any): any {
+  return id;
+}
