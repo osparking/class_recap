@@ -33,6 +33,12 @@ class PartTimeEmp extends Employee {
   }
 }
 
+const officeGirl = new FullTimeEmp("김", "미숙", 2500000);
+const gymTrainer = new PartTimeEmp("진", "종민", 15000, 170);
+
+console.log(`관리사무소 직원 봉급: ${officeGirl.getPay()}`)
+console.log(`체력단련실 직원 봉급: ${gymTrainer.getPay()}`)
+
 class Player {
   constructor(
     public readonly last: string,
