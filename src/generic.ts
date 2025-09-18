@@ -10,6 +10,15 @@ function stringIdentity(id: string): string {
 
 // 방법 2: any 형 사용
 
-function identity(id: any): any {
+// function identity(id: any): any {
+//   return id;
+// }
+
+// 헤법: generic function
+function identity<Type>(id: Type) : Type {
   return id;
 }
+
+console.log(`고양이 : ${identity<string>("나비")}`);
+console.log(`주문번호 : ${identity<number>(12345)}`);
+console.log(`핫 소스 추가 : ${identity<boolean>(true)}`);
