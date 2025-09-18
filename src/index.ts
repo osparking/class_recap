@@ -6,6 +6,20 @@ abstract class Employee {
   abstract getPay(): number;
 }
 
+class FullTimeEmp extends Employee {
+  getPay(): number {
+    return 1234;
+  }
+}
+
+class PartTimeEmp extends Employee {
+  getPay(): number {
+    return 6789;
+  }
+}
+
+
+
 class Player {
   constructor(
     public readonly last: string,
