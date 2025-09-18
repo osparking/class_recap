@@ -1,3 +1,11 @@
+abstract class Employee {
+  constructor(public last: string, public first: string) {}
+  greet(): void {
+    console.log("안녕하세요?");
+  }
+  abstract getPay(): number;
+}
+
 class Player {
   constructor(
     public readonly last: string,
@@ -68,7 +76,7 @@ class ElectricFan implements Colorful, Operatable {
   get runStep() {
     return this._runStep;
   }
-  
+
   set runStep(newRunStep: number) {
     this._runStep = newRunStep;
   }
