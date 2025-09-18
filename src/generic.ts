@@ -39,3 +39,5 @@ function getRandomElement<T>(elements: T[]): T | undefined {
     return elements[idx];
   }
 }
+
+console.log(getRandomElement<number>([1, 33, 2, 4545, -47]));
