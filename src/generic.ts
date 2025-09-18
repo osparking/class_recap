@@ -22,3 +22,11 @@ function identity<T>(id: T) : T {
 console.log(`고양이 : ${identity<string>("나비")}`);
 console.log(`주문번호 : ${identity<number>(12345)}`);
 console.log(`핫 소스 추가 : ${identity<boolean>(true)}`);
+
+type Cat = {
+  name: string,
+  age: number
+}
+
+const myCat = identity<Cat>({name: "나비", age: 16});
+console.log(myCat);
