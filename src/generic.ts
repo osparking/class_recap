@@ -40,4 +40,5 @@ function getRandomElement<T>(elements: T[]): T | undefined {
   }
 }
 
-console.log(getRandomElement<number>([1, 33, 2, 4545, -47]));
+console.log(getRandomElement([1, 33, 2, 4545, -47]));
+console.log(getRandomElement<number>([]));
