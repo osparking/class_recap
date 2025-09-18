@@ -142,3 +142,5 @@ interface Operatable {
   runStep: number;
   setRunStep(newRunStep: number): void;
 }
+
+const username = document.querySelector("#username")!;
