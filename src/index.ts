@@ -1,8 +1,7 @@
 const msgOrAges: (number | string)[] = [];
 
-const counts : Array<number> = [1, 2, 3];
-const messages : Array<string> = ["한 그루", "갑자기", "음악과 찻잔 사이"];
-
+const counts: Array<number> = [1, 2, 3];
+const messages: Array<string> = ["한 그루", "갑자기", "음악과 찻잔 사이"];
 
 abstract class Employee {
   constructor(public last: string, public first: string) {}
@@ -33,7 +32,7 @@ class PartTimeEmp extends Employee {
     private hoursWorked: number
   ) {
     super(last, first);
-  }  
+  }
   getPay(): number {
     return this.payPerHour * this.hoursWorked;
   }
@@ -42,8 +41,8 @@ class PartTimeEmp extends Employee {
 const officeGirl = new FullTimeEmp("김", "미숙", 2500000);
 const gymTrainer = new PartTimeEmp("진", "종민", 15000, 170);
 
-console.log(`관리사무소 직원 봉급: ${officeGirl.getPay()}`)
-console.log(`체력단련실 직원 봉급: ${gymTrainer.getPay()}`)
+console.log(`관리사무소 직원 봉급: ${officeGirl.getPay()}`);
+console.log(`체력단련실 직원 봉급: ${gymTrainer.getPay()}`);
 
 class Player {
   constructor(
@@ -143,5 +142,7 @@ interface Operatable {
   setRunStep(newRunStep: number): void;
 }
 
-const username = document.querySelector("#username")!;
+const username = document.querySelector<HTMLInputElement>("#username")!;
+console.log(username.value);
+username.value = "bumTiger";
 console.log(username.value);
