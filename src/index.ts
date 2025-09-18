@@ -20,12 +20,18 @@ class FullTimeEmp extends Employee {
 }
 
 class PartTimeEmp extends Employee {
+  constructor(
+    public last: string,
+    public first: string,
+    private payPerHour: number,
+    private hoursWorked: number
+  ) {
+    super(last, first);
+  }  
   getPay(): number {
-    return 6789;
+    return this.payPerHour * this.hoursWorked;
   }
 }
-
-
 
 class Player {
   constructor(
