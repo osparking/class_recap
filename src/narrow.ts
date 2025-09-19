@@ -1,5 +1,9 @@
 function triple (argu : number | string) {
-  return argu * 3;
+  if (typeof argu === "number") {
+    return argu * 3;
+  } else {
+    return argu.repeat(3);
+  }
 }
 
 console.log(triple(100));
