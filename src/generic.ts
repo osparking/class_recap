@@ -108,8 +108,8 @@ function makeListOf<T>() : T[] {
   return [];
 }
 
-const points = makeListOf<number>();
+const points = makeListOf();
 points.push(146);
-points.push(500);
+points.push("500");
 
 console.log("points: ", JSON.stringify(points));
