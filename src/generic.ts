@@ -88,3 +88,18 @@ function isLongEnough<T extends hasLength>(instance: T) : boolean {
 }
 
 console.log(isLongEnough("아주좋아"));
+// 배열
+console.log("배열 - 2 인자: ", isLongEnough([true, false]));
+
+// 함수 - 2 인자
+function addTwo(a: number, b: number): number {
+  return a + b;
+}
+console.log("함수 - 2 인자: ", isLongEnough(addTwo));
+
+// 함수 - 3 인자
+console.log("배열 - 3 인자: ", 
+  isLongEnough((i: string, j: string, k: string) => {
+    return i + j + k;
+  })
+);
