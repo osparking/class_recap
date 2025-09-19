@@ -78,3 +78,9 @@ const combined3: { song: string } & { sport: string[] } = merge<
 console.log(JSON.stringify(combined1));
 console.log(JSON.stringify(combined2));
 console.log(JSON.stringify(combined3));
+
+function isLongEnough<T>(instance: T) : boolean {
+  return instance.length >= 3;
+}
+
+console.log(isLongEnough("아주좋아"));
