@@ -113,3 +113,14 @@ points.push(146);
 points.push(500);
 
 console.log("points: ", JSON.stringify(points));
+
+interface Music {
+  title: string;
+  player: string;
+}
+
+interface YouTube {
+  videoUrl : string;
+  channel: string;
+  runtimesec: number;
+}
