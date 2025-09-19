@@ -149,3 +149,6 @@ videos.addThing({
   runtimesec: 3 * 60 + 15,
   videoUrl: "https://youtu.be/AdjhDjKbcUg?list=RDAdjhDjKbcUg",
 });
+
+console.log(musics.anyList.length);
+videos.anyList.forEach((v) => console.log(v.videoUrl));
