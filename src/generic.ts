@@ -103,3 +103,13 @@ console.log("배열 - 3 인자: ",
     return i + j + k;
   })
 );
+
+function makeListOf<T>() : T[] {
+  return [];
+}
+
+const points = makeListOf<number>();
+points.push(146);
+points.push(500);
+
+console.log("points: ", JSON.stringify(points));

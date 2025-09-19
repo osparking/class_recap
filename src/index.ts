@@ -142,6 +142,7 @@ interface Operatable {
   setRunStep(newRunStep: number): void;
 }
 
+const password = document.querySelector("#password")!;
 const username = document.querySelector<HTMLInputElement>("#username")!;
 console.log(username.value);
 username.value = "bumTiger";
