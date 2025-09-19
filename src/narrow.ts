@@ -7,3 +7,4 @@ function triple (argu : number | string) {
 }
 
 console.log(triple(100));
+console.log(triple("신기하다 "));
