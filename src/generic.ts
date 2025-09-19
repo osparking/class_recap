@@ -55,4 +55,16 @@ const combined1 = merge(
   { sport: ["배드민턴", "조깅", "헬쓰"] }
 );
 
+const combined2 = merge<{ song: string }, { sport: string[] }>(
+  { song: "가요" },
+  { sport: ["배드민턴", "조깅", "헬쓰"] }
+);
+
+const combined3: { song: string } & { sport: string[] } = merge<
+  { song: string },
+  { sport: string[] }
+>({ song: "가요" }, { sport: ["배드민턴", "조깅", "헬쓰"] });
+
 console.log(JSON.stringify(combined1));
+console.log(JSON.stringify(combined2));
+console.log(JSON.stringify(combined3));
