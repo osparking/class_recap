@@ -104,12 +104,12 @@ console.log("배열 - 3 인자: ",
   })
 );
 
-function makeListOf<T>() : T[] {
+function makeListOf<T = number>() : T[] {
   return [];
 }
 
 const points = makeListOf();
 points.push(146);
-points.push("500");
+points.push(500);
 
 console.log("points: ", JSON.stringify(points));
