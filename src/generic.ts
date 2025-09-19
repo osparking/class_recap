@@ -79,7 +79,11 @@ console.log(JSON.stringify(combined1));
 console.log(JSON.stringify(combined2));
 console.log(JSON.stringify(combined3));
 
-function isLongEnough<T>(instance: T) : boolean {
+interface hasLength {
+  length: number
+}
+
+function isLongEnough<T extends hasLength>(instance: T) : boolean {
   return instance.length >= 3;
 }
 
