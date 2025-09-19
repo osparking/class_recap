@@ -1,4 +1,4 @@
-function triple (argu : number) {
+function triple (argu : number | string) {
   return argu * 3;
 }
 
