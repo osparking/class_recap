@@ -132,3 +132,10 @@ class MusicList {
 class YouTubeList {
   public youTubeVideos : YouTube[] = [];
 }
+
+class AnyListOf<T> {
+  public anyList : T[] = [];
+  public addThing(thing :T) {
+    this.anyList.push(thing);
+  }
+}
