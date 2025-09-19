@@ -139,3 +139,13 @@ class AnyListOf<T> {
     this.anyList.push(thing);
   }
 }
+
+const musics = new AnyListOf<Music>();
+musics.addThing({player: "박정현", title: "다시 사링이"});
+
+const videos = new AnyListOf<YouTube>();
+videos.addThing({
+  channel: "TV-people",
+  runtimesec: 3 * 60 + 15,
+  videoUrl: "https://youtu.be/AdjhDjKbcUg?list=RDAdjhDjKbcUg",
+});
