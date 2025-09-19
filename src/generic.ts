@@ -124,3 +124,11 @@ interface YouTube {
   channel: string;
   runtimesec: number;
 }
+
+class MusicList {
+  public musicList : Music[] = [];
+}
+
+class YouTubeList {
+  public youTubeVideos : YouTube[] = [];
+}
