@@ -9,9 +9,10 @@ function triple(argu: number | string) {
 console.log(triple(100));
 console.log(triple("신기하다 "));
 
-const printLetters = (word: string | null) => {
+const printLetters = (word?: string) => {
   if (word) {
-    word.split("").forEach((letter) => console.log(letter));
+    for (let letter of word) 
+      console.log(letter);
   } else {
     console.log(`제공된 인자${word}는 스트링이 아니다.`);
   }
