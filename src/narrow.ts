@@ -24,3 +24,13 @@ if (elt) {
 } else {
   console.log(elt);
 }
+
+const eqNarrowDemo = (x: string | number, y: string | boolean) => {
+  if (x == y) {
+    console.log("같은 값", x.toUpperCase(), y.toUpperCase());
+  } else {
+    console.log("다른 형");
+  }
+}
+
+eqNarrowDemo("3", "3");
