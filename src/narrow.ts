@@ -34,3 +34,14 @@ const eqNarrowDemo = (x: string | number, y: string | boolean) => {
 }
 
 eqNarrowDemo("3", "3");
+
+interface TvShow {
+  title: string;
+  runTime: number;
+}
+
+interface NetFlexShow {
+  name: string;
+  episodeCount: number;
+  episodeRunTime: number;
+}
