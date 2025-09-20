@@ -11,8 +11,7 @@ console.log(triple("신기하다 "));
 
 const printLetters = (word?: string) => {
   if (word) {
-    for (let letter of word) 
-      console.log(letter);
+    for (let letter of word) console.log(letter);
   } else {
     console.log(`제공된 인자${word}는 스트링이 아니다.`);
   }
@@ -31,7 +30,7 @@ const eqNarrowDemo = (x: string | number, y: string | boolean) => {
   } else {
     console.log("다른 형");
   }
-}
+};
 
 eqNarrowDemo("3", "3");
 
@@ -46,10 +45,15 @@ interface NetFlexShow {
   episodeRunTime: number;
 }
 
-const getTotalRuntime = (watchStory : TvShow | NetFlexShow): number => {
+const getTotalRuntime = (watchStory: TvShow | NetFlexShow): number => {
   if ("episodeCount" in watchStory) {
     return watchStory.episodeCount * watchStory.episodeRunTime;
   } else {
     return watchStory.runTime;
   }
-}
+};
+
+console.log(getTotalRuntime({ title: "명량", runTime: 130 }));
+console.log(
+  getTotalRuntime({ name: "오징어게임", episodeCount: 6, episodeRunTime: 60 })
+);
