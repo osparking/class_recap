@@ -16,3 +16,10 @@ const printLetters = (word: string | null) => {
     console.log(`제공된 인자${word}는 스트링이 아니다.`);
   }
 };
+
+const elt = document.getElementById("someId");
+if (elt) {
+  console.log(elt);
+} else {
+  console.log(elt);
+}
