@@ -45,3 +45,11 @@ interface NetFlexShow {
   episodeCount: number;
   episodeRunTime: number;
 }
+
+const getTotalRuntime = (watchStory : TvShow | NetFlexShow): number => {
+  if ("episodeCount" in watchStory) {
+    return watchStory.episodeCount * watchStory.episodeRunTime;
+  } else {
+    return watchStory.runTime;
+  }
+}
