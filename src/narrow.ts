@@ -1,22 +1,17 @@
-class CatType {
-  constructor (public hasMom: boolean){};
+interface Rooster {
+  name: string;
+  weight: number;
+  age: number;
 }
 
-class DogType {
-  constructor(public regiNumber: number){};
+interface Cow {
+  name: string;
+  weight: number;
+  age: number;
 }
 
-const makeSound = (pet : CatType | DogType) => {
-  if (isCat(pet)) {
-    return `야옹. 엄마 있다: ${pet.hasMom}`;
-  } else {
-    pet
-    return "멍멍";
-  }
+interface Pig {
+  name: string;
+  weight: number;
+  age: number;
 }
-
-function isCat(pet : CatType | DogType) :pet is CatType {
-  return (pet as CatType).hasMom !== undefined;
-}
-
-console.log(makeSound({hasMom: true}));
