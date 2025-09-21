@@ -57,3 +57,10 @@ console.log(getTotalRuntime({ title: "명량", runTime: 130 }));
 console.log(
   getTotalRuntime({ name: "오징어게임", episodeCount: 6, episodeRunTime: 60 })
 );
+
+class MyClass {
+  constructor(public mood: string, public point: number){}
+}
+
+let xzy = new MyClass("좋아", 100);
+console.log(xzy instanceof MyClass);
