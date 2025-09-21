@@ -36,4 +36,5 @@ const 꼬꼬 : Rooster = {
   name: "꼬꼬",
   weight: 1.8,
   age: 2,
+  kind: "rooster"
 }
