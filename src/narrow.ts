@@ -19,14 +19,25 @@ interface Pig {
   종류: "pig";
 }
 
-type FarmAnimal = Rooster | Cow | Pig;
+interface Sheep {
+  name: string;
+  weight: number;
+  age: number;
+  종류: "sheep";
+}
+
+type FarmAnimal = Rooster | Cow | Pig | Sheep;
 
 function getAnimalSound(animal : FarmAnimal) : string {
   switch (animal.종류) {
-    case "cow": 
+    case "cow":
+      return "음머" ;
       break;
     case "rooster":
       return "꼬끼요.";
+      break;
+    case "pig":
+      return "꿀꿀.";
       break;
     default:
       break;
