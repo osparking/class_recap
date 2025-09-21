@@ -15,3 +15,10 @@ interface Pig {
   weight: number;
   age: number;
 }
+
+type FarmAnimal = Rooster | Cow | Pig;
+
+function getAnimalSound(animal : FarmAnimal) : string {
+  animal
+  return "";
+}
