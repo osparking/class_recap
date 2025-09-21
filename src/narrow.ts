@@ -45,11 +45,11 @@ function getAnimalSound(animal : FarmAnimal) : string {
   return "";
 }
 
-const 꼬꼬 : Rooster = {
+const 꼬꼬 : Sheep = {
   name: "꼬꼬",
   weight: 1.8,
   age: 2,
-  종류: "rooster"
+  종류: "sheep"
 }
 
 console.log("꼬꼬 소리는? ", getAnimalSound(꼬꼬));
