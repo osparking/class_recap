@@ -81,3 +81,6 @@ const getTimeAfterDays = (dayObjOrStr: Date | string, days: number): string => {
   }
   return dayObjOrStr.toLocaleString();
 };
+
+console.log("데이트:", getTimeAfterDays(new Date("2026. 1. 3."), 180));
+console.log("문자열:", getTimeAfterDays("2026. 1. 3.", 180));
