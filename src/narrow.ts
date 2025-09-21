@@ -23,8 +23,10 @@ type FarmAnimal = Rooster | Cow | Pig;
 
 function getAnimalSound(animal : FarmAnimal) : string {
   switch (animal.kind) {
-    case "cow": animal;
-      animal;
+    case "cow": 
+      break;
+    case "rooster":
+      return "꼬끼요.";
       break;
     default:
       break;
@@ -38,3 +40,5 @@ const 꼬꼬 : Rooster = {
   age: 2,
   kind: "rooster"
 }
+
+console.log("꼬꼬 소리는? ", getAnimalSound(꼬꼬));
