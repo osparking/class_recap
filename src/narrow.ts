@@ -84,3 +84,21 @@ const getTimeAfterDays = (dayObjOrStr: Date | string, days: number): string => {
 
 console.log("데이트:", getTimeAfterDays(new Date("2026. 1. 3."), 180));
 console.log("문자열:", getTimeAfterDays("2026. 1. 3.", 180));
+
+class User {
+  constructor (public username: string){}
+}
+
+class Account {
+  constructor (public username : string){}
+}
+
+function processCustomer(customer: User | Account) {
+  if (customer instanceof User) {
+    console.log("유저 객체 처리");
+  } else {
+    // Account 객체를 처리한다.
+  }
+}
+
+processCustomer(new User('leejm'));
