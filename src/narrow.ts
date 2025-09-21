@@ -39,6 +39,9 @@ function getAnimalSound(animal : FarmAnimal) : string {
     case "pig":
       return "꿀꿀.";
       break;
+    case "sheep":
+      return "메에에에.";
+      break;
     default:
       const ckeckAll: never = animal;
       console.log(ckeckAll);
@@ -48,11 +51,11 @@ function getAnimalSound(animal : FarmAnimal) : string {
   return "";
 }
 
-const 꼬꼬 : Sheep = {
+const 꼬꼬 : Rooster = {
   name: "꼬꼬",
   weight: 1.8,
   age: 2,
-  종류: "sheep"
+  종류: "rooster"
 }
 
 console.log("꼬꼬 소리는? ", getAnimalSound(꼬꼬));
