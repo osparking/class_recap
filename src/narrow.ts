@@ -70,3 +70,14 @@ console.log("날짜인가?",  today instanceof Date);
 
 const dateObj  = new Date("2025. 9. 21.");
 console.log(dateObj.toLocaleDateString());
+
+const getTimeAfterDays = (dayObjOrStr: Date | string, days: number): string => {
+  if (dayObjOrStr instanceof Date) {
+    // 날짜 객체이므로 날짜 증가 바로 가능
+    dayObjOrStr.setDate(dayObjOrStr.getDate() + days);
+  } else {
+    dayObjOrStr = new Date(dayObjOrStr);
+    dayObjOrStr.setDate(dayObjOrStr.getDate() + days);
+  }
+  return dayObjOrStr.toLocaleString();
+};
