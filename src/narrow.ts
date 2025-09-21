@@ -40,6 +40,9 @@ function getAnimalSound(animal : FarmAnimal) : string {
       return "꿀꿀.";
       break;
     default:
+      const ckeckAll: never = animal;
+      console.log(ckeckAll);
+      throw new Error(`처리 필요 '종류': ${ckeckAll}`);
       break;
   }
   return "";
