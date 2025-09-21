@@ -64,3 +64,9 @@ class MyClass {
 
 let xzy = new MyClass("좋아", 100);
 console.log(xzy instanceof MyClass);
+
+const today = new Date();
+console.log("날짜인가?",  today instanceof Date);
+
+const dateObj  = new Date("2025. 9. 21.");
+console.log(dateObj.toLocaleDateString());
